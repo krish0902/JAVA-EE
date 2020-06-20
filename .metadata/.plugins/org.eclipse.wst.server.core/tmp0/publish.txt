@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Sun May 31 22:04:00 EDT 2020
+org.eclipse.jst.jee.server\:SimpleServletProject=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\SimpleServletProject
+org.eclipse.jst.jee.server\:LoginApp=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\LoginApp

@@ -1,0 +1,5 @@
+package org.sai.java.service;
+
+public class LoginService {
+
+}

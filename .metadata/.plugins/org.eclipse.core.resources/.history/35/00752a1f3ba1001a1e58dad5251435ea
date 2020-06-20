@@ -1,0 +1,7 @@
+package com.sai.javaee;
+
+import javax.servlet.http.HttpServlet;
+
+public class XmlServlet extends HttpServlet {
+
+}

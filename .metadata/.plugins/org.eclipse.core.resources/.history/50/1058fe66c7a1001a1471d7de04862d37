@@ -1,0 +1,51 @@
+package com.sai.javaee;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class XmlServlet extends HttpServlet {
+
+	
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+		System.out.println("Hello from Xml servlet GET method.");
+		  
+		  response.setContentType("text/html");
+		  PrintWriter out = response.getWriter();
+		  String userName = request.getParameter("userName");
+		  out.println("Hello! "+userName);
+		
+		
+		
+//		  PrintWriter writer = response.getWriter();
+//		  writer.println("<h3>Hello from Xml servlet in html</h3>");
+//		 
+//        response.getWriter().print("Hello from Xml Servlet GET method - on the web page!");
+//        
+	}
+	
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+		System.out.println("Hello from Xml servlet GET method.");
+		  
+		  response.setContentType("text/html");
+		  PrintWriter out = response.getWriter();
+		  String userName = request.getParameter("userName");
+		  String fullName = request.getParameter("fullName");
+		  out.println("Hello from POST method! "+userName+" Your full Name is "+ fullName);
+		
+	}
+	
+	
+	
+	
+}
